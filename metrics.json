@@ -1,0 +1,36 @@
+{
+  "model_name": "LSTM Regressor (2-layer)",
+  "baseline_name": "Persistence Baseline (T(t+24h) = T(t))",
+  "n_test_samples": 10399,
+  "test_period_start": "2015-10-20 16:50:00",
+  "test_period_end": "2016-12-31 23:40:00",
+  "lstm_metrics": {
+    "mae_degC": 2.2449393272399902,
+    "rmse_degC": 2.8427712569233305,
+    "r2_score": 0.8676270246505737
+  },
+  "baseline_metrics": {
+    "mae_degC": 2.5065996646881104,
+    "rmse_degC": 3.2586049824395085,
+    "r2_score": 0.8260682821273804
+  },
+  "relative_improvement_pct": {
+    "mae_reduction_pct": 10.43885631735604,
+    "rmse_reduction_pct": 12.76109647401539
+  },
+  "training_summary": {
+    "best_epoch": 7,
+    "best_val_loss": 0.1108854260486597,
+    "train_loss": 0.11350181537123266,
+    "architecture": {
+      "input_size": 19,
+      "hidden_size": 64,
+      "num_layers": 2,
+      "dropout": 0.2,
+      "seed": 42,
+      "stride": 6,
+      "window_size": 144,
+      "horizon": 144
+    }
+  }
+}
